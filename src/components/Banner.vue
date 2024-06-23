@@ -1,25 +1,23 @@
 <template>
-    <header class="banner">
+  <header class="banner">
     <div class="apresentacao">
-      <img src="/src/assets/images/logo.svg" alt="Logo do cookin Up" class="logo">
+      <img src="../assets/images/logo.svg" alt="Logo do Cookin' Up" class="logo">
+
       <p class="cabecalho-lg frase-cabecalho">
-        <span class="texto-verde">Um banquete para </span>
-        despertar o chef que há em você
+        <span class="texto-verde">Um banquete de ideias para</span>
+        despertar o chef que há em você!
       </p>
 
       <p class="subtitulo-lg">
-        Explore novas receitas todos os dias com os ingredientes que 
-        estão ao seu alcance!
+        Explore novas receitas todos os dias com os ingredientes que estão ao seu alcance!
       </p>
     </div>
 
-    <img src="/src/assets/images/foto-banner.png" alt="Foto de  um mulher cozinhando com uma 
-    bacia de vidro nas mãos" class="foto-banner">
-
+    <img src="../assets/images/foto-banner.png" alt="Foto de uma mulher cozinhando com uma bacia de vidro nas mãos. Ela está sorrindo e está apoiando um celular entre seu rosto e ombro." class="foto-banner">
   </header>
 </template>
-<style scoped>
 
+<style scoped>
 .banner {
   padding: 4rem 7.5rem;
   color: var(--creme);
@@ -28,7 +26,6 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 3.25rem;
-  /*background-image: url('/src/assets/images/fundo-banner.png');*/
 }
 
 .logo {
