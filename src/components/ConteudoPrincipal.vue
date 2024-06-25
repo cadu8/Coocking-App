@@ -1,5 +1,7 @@
 <script lang="ts">
-  import SelecionarIngredientes from './SelecionarIngredientes.vue';
+  import CardCategoria from './CardCategoria.vue';
+import IngredienteSelecionavel from './IngredienteSelecionavel.vue';
+import SelecionarIngredientes from './SelecionarIngredientes.vue';
   import Tag from './Tag.vue';
 
 export default {
@@ -23,7 +25,7 @@ export default {
             </span>
             <ul v-if="ingredientes.length" class="ingredientes-sua-lista">
                 <li v-for="ingrediente in ingredientes" :key="ingrediente" >
-                    <Tag :texto="ingrediente"/>
+                    <Tag :texto="ingrediente" :ativa="true"/>
                 </li>
                
             </ul>
@@ -44,6 +46,7 @@ export default {
   color: var(--cinza, #444);
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
